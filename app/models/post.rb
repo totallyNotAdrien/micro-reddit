@@ -3,4 +3,5 @@ class Post < ApplicationRecord
   validates :body, allow_blank: true, length: {in: 0..20000}
   
   belongs_to :user
+  has_many :comments
 end
